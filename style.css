@@ -1,0 +1,26 @@
+:root {
+  --color1: #9356dc;
+  --color2: #ff79da;
+  --color3: #99e2d0;
+}
+body {
+  font-family: "roboto", cursive;
+  color: black;
+}
+.logo h1 {
+  font-family: "Shrikhand", cursive;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+form {
+  background-color: rgb(212, 211, 211);
+}
+.location {
+  color: black;
+}
+#recherche {
+  border: none;
+  margin: 20px;
+  background-color: rgb(212, 211, 211);
+}
