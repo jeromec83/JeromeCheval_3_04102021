@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+* {
+  margin: 0px;
+  font-family: "roboto", cursive;
+  color: black;
+}
+
+.logo h1 {
+  font-family: "Shrikhand", cursive;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.location {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  background-color: #e0dede;
+  width: 110vw;
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.418) inset;
+          box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.418) inset;
+}
+
+#recherche {
+  border: none;
+  margin: 25px;
+  background-color: #e0dede;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 50px 0;
+}
+
+.intro h2 {
+  text-align: center;
+  max-width: 250px;
+  margin: 0;
+}
+
+.intro p {
+  text-align: center;
+  margin: 16px 0px;
+}
+
+.intro button {
+  height: 50px;
+  display: block;
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  color: white;
+  font-size: 16px;
+  padding: 0 20px;
+  border-radius: 200px;
+  border: none;
+}
+
+.intro button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.fonction {
+  padding: 25px 10px;
+  width: 95%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fonction .fonctioncase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f6f6f6;
+  height: 50px;
+  width: 95%;
+  margin: 10px 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.fonction .fonctioncase:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.349);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.349);
+  background: white;
+}
+
+.fonction .number {
+  background-color: #9356dc;
+  color: white;
+  position: absolute;
+  padding: 3px 8px 3px 8px;
+  border-radius: 500px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.fonction .icon {
+  margin: 0 20px;
+}
+
+.fonction .fas {
+  color: #7e7e7e;
+}
+/*# sourceMappingURL=styleindex.css.map */
