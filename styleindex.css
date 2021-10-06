@@ -70,6 +70,7 @@
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 50px 0;
+  background: #f6f6f6;
 }
 
 .intro h2 {
@@ -157,5 +158,65 @@
 
 .fonction .fas {
   color: #7e7e7e;
+}
+
+.restaurant {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 70px;
+  background: #f6f6f6;
+}
+
+.restaurant h2 {
+  right: -15px;
+}
+
+.resto {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: strech;
+      -ms-flex-align: strech;
+          align-items: strech;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.301);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.301);
+}
+
+.resto .new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99e2d0;
+  color: black;
+  position: absolute;
+  padding: 10px 20px;
+  top: 20px;
+  right: 20px;
+}
+
+.resto img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0;
 }
 /*# sourceMappingURL=styleindex.css.map */
