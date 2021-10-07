@@ -7,7 +7,14 @@ $tertiaire: #99e2d0;
 * {
   margin: 0px;
   font-family: "roboto", cursive;
-  color: black;
+  & li{
+    list-style-type: none;
+   }
+  & a{
+    text-decoration: none;
+    color: black;
+  }
+  
 }
 
 .logo h1 {
@@ -118,16 +125,19 @@ $tertiaire: #99e2d0;
     color: #7e7e7e;
   }
 }
-.restaurant {
+.restaurant{
+  background: #f6f6f6;
+  width: 100%;
+  & h2{
+    margin:20px;
+  }
+}
+.restoblock {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    padding: 70px;
-    background: #f6f6f6;
-
-    & h2{
-        right: -15px;
-    }
+    padding-left: 65px;
+    width: 70%;  
 }
 .resto {
   position: relative;
@@ -155,5 +165,73 @@ $tertiaire: #99e2d0;
     height: 200px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+  }
+  & .restotextheart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  & .textrestaurant{
+    margin: 10px 0;
+  }
+  & .heart{
+    font-size: 30px;
+  }
+  & .heart:hover{
+    opacity: 1;
+    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+  }
+  
+}
+.resto:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 1px -1px 17px 3px rgba(147,86,220,0.73);
+  transition: ease-in-out .5s;
+}
+
+footer{
+  width: 100%;
+  background-color: #353535;
+  color: white;
+  margin-top: 20px;
+
+  & .footerlogo h3{
+    font-family: "Shrikhand", cursive;
+    margin: 0px 0 20px 50px;
+    padding-top: 20px;
+  }
+
+  & .footermenu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+  & .footerblock{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+  }
+  & .fas{
+    padding-right: 5px;
+  }
+
+  & a{
+    color: white;
+  }
+
+  & p:hover{
+    text-decoration: underline;
+  }
+
+  & a:hover{
+    text-decoration: underline;
   }
 }

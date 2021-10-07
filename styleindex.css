@@ -2,6 +2,14 @@
 * {
   margin: 0px;
   font-family: "roboto", cursive;
+}
+
+* li {
+  list-style-type: none;
+}
+
+* a {
+  text-decoration: none;
   color: black;
 }
 
@@ -161,17 +169,22 @@
 }
 
 .restaurant {
+  background: #f6f6f6;
+  width: 100%;
+}
+
+.restaurant h2 {
+  margin: 20px;
+}
+
+.restoblock {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 20px;
-  padding: 70px;
-  background: #f6f6f6;
-}
-
-.restaurant h2 {
-  right: -15px;
+  padding-left: 65px;
+  width: 70%;
 }
 
 .resto {
@@ -218,5 +231,100 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0 0;
+}
+
+.resto .restotextheart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resto .textrestaurant {
+  margin: 10px 0;
+}
+
+.resto .heart {
+  font-size: 30px;
+}
+
+.resto .heart:hover {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.resto:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 1px -1px 17px 3px rgba(147, 86, 220, 0.73);
+          box-shadow: 1px -1px 17px 3px rgba(147, 86, 220, 0.73);
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+footer {
+  width: 100%;
+  background-color: #353535;
+  color: white;
+  margin-top: 20px;
+}
+
+footer .footerlogo h3 {
+  font-family: "Shrikhand", cursive;
+  margin: 0px 0 20px 50px;
+  padding-top: 20px;
+}
+
+footer .footermenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 50px;
+}
+
+footer .footerblock {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+}
+
+footer .fas {
+  padding-right: 5px;
+}
+
+footer a {
+  color: white;
+}
+
+footer p:hover {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styleindex.css.map */
