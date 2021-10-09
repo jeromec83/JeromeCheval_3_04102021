@@ -3,6 +3,8 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   background: #f6f6f6;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 body a {
@@ -84,16 +86,6 @@ img {
   font-family: "roboto", cursive;
   font-weight: lighter;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .restaurant .menu h2::after {
@@ -105,8 +97,90 @@ img {
 }
 
 .restaurant .startermenu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: startermenu;
+}
+
+.restaurant .starterprice {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: starterprice;
+}
+
+.restaurant .starterbutton {
+  visibility: hidden;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: starterbutton;
+}
+
+.restaurant .starter1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.8fr 0.5fr 0.7fr;
+      grid-template-columns: 1.8fr 0.5fr 0.7fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 7px;
+      grid-template-areas: "startermenu starterprice starterbutton";
   background-color: white;
   border-radius: 15px;
   width: 95%;
+  margin: 15px;
+}
+
+.restaurant .starter2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.8fr 0.5fr 0.7fr;
+      grid-template-columns: 1.8fr 0.5fr 0.7fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 7px;
+      grid-template-areas: "startermenu starterprice starterbutton";
+  background-color: white;
+  border-radius: 15px;
+  width: 95%;
+  margin: 15px;
+}
+
+.restaurant .starter3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.8fr 0.7fr;
+      grid-template-columns: 1.8fr 0.7fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 7px;
+      grid-template-areas: "startermenu starterprice";
+  background-color: white;
+  border-radius: 15px;
+  width: 95%;
+  margin: 15px;
+}
+
+.restaurant .starter3:hover {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.8fr 0.5fr 0.7fr;
+      grid-template-columns: 1.8fr 0.5fr 0.7fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 7px;
+      grid-template-areas: "startermenu starterprice starterbutton";
+  background-color: white;
+  border-radius: 15px;
+  width: 95%;
+  margin: 15px;
+}
+
+.restaurant .starterbutton:hover {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: starterbutton;
+  visibility: visible;
+  background: #99e2d0;
+  position: absolue;
 }
 /*# sourceMappingURL=stylemenu.css.map */
