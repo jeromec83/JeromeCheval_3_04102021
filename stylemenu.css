@@ -3,8 +3,6 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   background: #f6f6f6;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 body a {
@@ -48,7 +46,7 @@ img {
      object-fit: cover;
 }
 
-#menu {
+#sectionmenu {
   background: white;
   width: 100%;
   display: -webkit-box;
@@ -89,98 +87,95 @@ img {
 }
 
 .restaurant .menu h2::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   content: "";
   width: 50px;
   height: 4px;
   background: #99e2d0;
+  position: absolute;
+  left: 20px;
   margin-top: 5px;
 }
 
-.restaurant .startermenu {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: startermenu;
+.restaurant .casemenu {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1.5fr 0.5fr;
+      grid-template-columns: 1.5fr 0.5fr;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 20px 10px 0;
+  padding-left: 10px;
 }
 
-.restaurant .starterprice {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: starterprice;
+.restaurant .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.restaurant .starterbutton {
+.restaurant .description h3 {
+  margin-bottom: 0px;
+}
+
+.restaurant .description p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.restaurant .price {
+  font-weight: bold;
+  margin: 0px;
+}
+
+.restaurant button {
   visibility: hidden;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: starterbutton;
 }
 
-.restaurant .starter1 {
+.restaurant .casemenu:hover {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.8fr 0.5fr 0.7fr;
-      grid-template-columns: 1.8fr 0.5fr 0.7fr;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1.6fr 0.7fr 0.7fr;
+      grid-template-columns: 1.6fr 0.7fr 0.7fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  gap: 0px 7px;
-      grid-template-areas: "startermenu starterprice starterbutton";
-  background-color: white;
-  border-radius: 15px;
-  width: 95%;
-  margin: 15px;
+  gap: 0px 0px;
 }
 
-.restaurant .starter2 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1.8fr 0.5fr 0.7fr;
-      grid-template-columns: 1.8fr 0.5fr 0.7fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  gap: 0px 7px;
-      grid-template-areas: "startermenu starterprice starterbutton";
-  background-color: white;
-  border-radius: 15px;
-  width: 95%;
-  margin: 15px;
-}
-
-.restaurant .starter3 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1.8fr 0.7fr;
-      grid-template-columns: 1.8fr 0.7fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  gap: 0px 7px;
-      grid-template-areas: "startermenu starterprice";
-  background-color: white;
-  border-radius: 15px;
-  width: 95%;
-  margin: 15px;
-}
-
-.restaurant .starter3:hover {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1.8fr 0.5fr 0.7fr;
-      grid-template-columns: 1.8fr 0.5fr 0.7fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  gap: 0px 7px;
-      grid-template-areas: "startermenu starterprice starterbutton";
-  background-color: white;
-  border-radius: 15px;
-  width: 95%;
-  margin: 15px;
-}
-
-.restaurant .starterbutton:hover {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: starterbutton;
+.restaurant .casemenu:hover button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   visibility: visible;
-  background: #99e2d0;
-  position: absolue;
+  height: 100%;
+  width: 100%;
+  background-color: #99e2d0;
+  border: none;
+  border-radius: 0 15px 15px 0;
 }
 /*# sourceMappingURL=stylemenu.css.map */
