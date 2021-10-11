@@ -1,14 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 
 @mixin casemenu {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1.5fr 0.5fr;
-  align-items: end;
+  display: flex;
   background-color: white;
   border-radius: 15px;
   margin: 0 20px 10px 0;
-  padding-left: 10px;
 }
 
 $primaire: #9356dc;
@@ -18,7 +14,7 @@ $tertiaire: #99e2d0;
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  background: #f6f6f6;
+  background-color:  #f6f6f6;
 
   & a {
     text-decoration: none;
@@ -26,8 +22,7 @@ body {
   }
 }
 
-header {
-  z-index: 10;
+header { 
   background: white;
   width: 100%;
 
@@ -54,8 +49,9 @@ img {
   height: 50vh;
   object-fit: cover;
 }
+
 #sectionmenu {
-  background: white;
+  background-color: #f6f6f6;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -67,6 +63,27 @@ img {
   margin-top: -100px;
   border-radius: 30px 30px 0 0;
   width: 100%;
+  .restointro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .heart {
+    stroke-width: 10;
+    stroke: black;
+    fill: white;
+    cursor: pointer;
+  }
+  .heartempty {
+    width: 30px;
+    position: relative; 
+    &:hover {
+      stroke:transparent;
+      transition: 0.5s;
+      fill:url(#text-fill);
+    }
+  }
 
   .menu {
     margin-left: 20px;
@@ -74,6 +91,7 @@ img {
   #name {
     margin-left: 20px;
     font-family: "Shrikhand", cursive;
+    font-weight: lighter;
   }
   .menu h2 {
     font-family: "roboto", cursive;
@@ -95,22 +113,67 @@ img {
   .casemenu {
     @include casemenu;
   }
+  #case1{
+    animation: animcase 0.1s ease-in-out;
+  }
+  #case2{
+    animation: animcase 0.5s ease-in-out;
+  }
+  #case3{
+    animation: animcase 1s ease-in-out;
+  }
+  #case4{
+    animation: animcase 1.5s ease-in-out;
+  }
+  #case5{
+    animation: animcase 2s ease-in-out;
+  }
+  #case6{
+    animation: animcase 2.5s ease-in-out;
+  }
+  #case7{
+    animation: animcase 3s ease-in-out;
+  }
+  #case8{
+    animation: animcase 3.5s ease-in-out;
+  }
+  #case9{
+    animation: animcase 4s ease-in-out;
+  }
+  #case10{
+    animation: animcase 4.5s ease-in-out;
+  }
+
   .description {
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+    margin-left: 10px;
       h3{
-        margin-bottom: 0px;
-      }
-      p{
-        margin-top:0px;
+        display:block;
         margin-bottom: 0px;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 80%;
+      }
+      p{
+        display: block;
+        margin-top:0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 80%;
+        padding-bottom: 5px;
       }
   }
   .price {
     font-weight: bold;
-    margin: 0px; 
+    margin: 0px;
+    align-self: flex-end;
+    padding-bottom: 5px;
   }
   & button {
     visibility: hidden;
@@ -118,21 +181,105 @@ img {
   .casemenu:hover {
     display: grid; 
     grid-auto-columns: 1fr; 
-    grid-template-columns: 1.6fr 0.7fr 0.7fr; 
+    grid-template-columns: 1.4fr 0.9fr 0.7fr; 
     grid-template-rows: 1fr; 
+    transition: 2s ease-in-out;
+    align-content: center;
     gap: 0px 0px; 
-     button {
+    cursor: pointer;
+    
+     .check {
        display:flex;
        align-items: center;
        justify-content: center;
        visibility:visible;
        height: 100%;
        width: 100%;
+       position: absolue;
        background-color: $tertiaire;
        border: none;
        border-radius: 0 15px 15px 0;
-       
-
+       animation: animcheckbox 1s ease-in ;
+       cursor: pointer;
      }
+     .fa{
+       font-size: 30px;
+       color: white;
+      animation: animfar 1s linear;
+     }
+  }
+}
+@keyframes animcheckbox{
+  0%{transform: scaleX(0);}
+  100%{transform: scaleX(-50px);}
+}
+@keyframes animcase{
+  0%{opacity: 0;};
+  100%{opacity:1};
+}
+
+.order {
+  height: 50px;
+  display: block;
+  opacity: 1;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  color: white;
+  font-size: 16px;
+  padding: 0 20px;
+  border-radius: 200px;
+  border: none;
+    button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+     }
+}
+@keyframes animfar {
+  0%{transform: rotate(0deg)};
+  50%{transform: rotate(160deg)};
+  100%{transform: rotate(360deg);}
+}
+
+footer{
+  width: 100%;
+  background-color: #353535;
+  color: white;
+  margin-top: 20px;
+
+  & .footerlogo h3{
+    font-family: "Shrikhand", cursive;
+    margin: 0px 0 20px 50px;
+    padding-top: 20px;
+  }
+
+  & .footermenu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+  & .footerblock{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+  }
+  & .fas{
+    padding-right: 5px;
+  }
+
+  & a{
+    color: white;
+  }
+
+  & p:hover{
+    text-decoration: underline;
+  }
+
+  & a:hover{
+    text-decoration: underline;
   }
 }
