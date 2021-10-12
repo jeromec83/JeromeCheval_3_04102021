@@ -165,7 +165,7 @@ img {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: 80%;
+        width: 75%;
         padding-bottom: 5px;
       }
   }
@@ -181,7 +181,7 @@ img {
   .casemenu:hover {
     display: grid; 
     grid-auto-columns: 1fr; 
-    grid-template-columns: 1.4fr 0.9fr 0.7fr; 
+    grid-template-columns: 1.4fr 0.9fr 1fr; 
     grid-template-rows: 1fr; 
     transition: 2s ease-in-out;
     align-content: center;
@@ -200,6 +200,7 @@ img {
        border: none;
        border-radius: 0 15px 15px 0;
        animation: animcheckbox 1s ease-in ;
+       transform-origin: right;
        cursor: pointer;
      }
      .fa{

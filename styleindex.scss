@@ -4,63 +4,67 @@ $primaire: #9356dc;
 $secondaire: #ff79da;
 $tertiaire: #99e2d0;
 
-/*.loader {
-  height: 100%;
-  width: 100%;
-  background: white;
-  margin: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  animation: hide 10s linear;
-  visibility: hidden;
-  .section {
-    position: fixed;
+* {
+  margin: 0px;
+  font-family: "roboto", cursive;
+  & li {
+    list-style-type: none;
+  }
+  & a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: loader 5s ease-in-out;
+  animation-delay: 10s;
+
+
+
+  .sectionloader {
+    position: relative;
     width: 90%;
     display: flex;
-    margin:200px 20px 20px 0;
     justify-content: space-between;
     align-items: center;
   }
-  .section .icon {
+
+  .sectionloader .iconresto {
     width: 100px;
   }
-  .section .icon path {
+
+  .sectionloader .iconresto path {
     fill: transparent;
     stroke: fuchsia;
     stroke-width: 0.2px;
   }
-  .section .icon.resto path {
+
+  .sectionloader .iconresto path {
     stroke-dasharray: 55;
     stroke-dashoffset: 0;
-    animation: animate-resto 2s linear infinite;
+    animation: animate-resto 2s linear;
   }
-  .section .icon.store path {
-    stroke-dasharray: 55;
-    stroke-dashoffset: 0;
-    animation: animate-resto 2s linear infinite;
-  }
-  .section p {
+  
+  .sectionloader p {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 14px;
-    animation: animation-p 2s linear infinite;
+    animation: animation-p 2s linear;
   }
 }
 
-@keyframes hide {
+@keyframes loader {
   0% {
+    opacity: 1;
     visibility: visible;
-    opacity: 0.9;
-  }
-  70% {
-    opacity: 0.9;
   }
   100% {
-    opacity: 1;
-    visibility: hidden;
+    opacity: 0;
+    z-index: -10;
+    display: none;
   }
 }
 @keyframes animate-resto {
@@ -84,17 +88,6 @@ $tertiaire: #99e2d0;
   100% {
     letter-spacing: normal;
   }
-}*/
-* {
-  margin: 0px;
-  font-family: "roboto", cursive;
-  & li {
-    list-style-type: none;
-  }
-  & a {
-    text-decoration: none;
-    color: black;
-  }
 }
 
 .logo h1 {
@@ -112,7 +105,7 @@ $tertiaire: #99e2d0;
   justify-content: center;
   color: black;
   background-color: rgb(224, 222, 222);
-  width: 110vw;
+  width: 100%;
   box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.418) inset;
 }
 
@@ -267,11 +260,11 @@ $tertiaire: #99e2d0;
   }
   .heartempty {
     width: 30px;
-    position: relative; 
+    position: relative;
     &:hover {
-      stroke:transparent;
+      stroke: transparent;
       transition: 0.5s;
-      fill:url(#text-fill);
+      fill: url(#text-fill);
     }
   }
 }

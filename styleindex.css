@@ -1,85 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
-/*.loader {
-  height: 100%;
-  width: 100%;
-  background: white;
-  margin: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  animation: hide 10s linear;
-  visibility: hidden;
-  .section {
-    position: fixed;
-    width: 90%;
-    display: flex;
-    margin:200px 20px 20px 0;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .section .icon {
-    width: 100px;
-  }
-  .section .icon path {
-    fill: transparent;
-    stroke: fuchsia;
-    stroke-width: 0.2px;
-  }
-  .section .icon.resto path {
-    stroke-dasharray: 55;
-    stroke-dashoffset: 0;
-    animation: animate-resto 2s linear infinite;
-  }
-  .section .icon.store path {
-    stroke-dasharray: 55;
-    stroke-dashoffset: 0;
-    animation: animate-resto 2s linear infinite;
-  }
-  .section p {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 14px;
-    animation: animation-p 2s linear infinite;
-  }
-}
-
-@keyframes hide {
-  0% {
-    visibility: visible;
-    opacity: 0.9;
-  }
-  70% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-    visibility: hidden;
-  }
-}
-@keyframes animate-resto {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  40% {
-    stroke-dashoffset: 55;
-  }
-  100% {
-    stroke-dashoffset: 110;
-  }
-}
-@keyframes animation-p {
-  0% {
-    letter-spacing: normal;
-  }
-  50% {
-    letter-spacing: 4px;
-  }
-  100% {
-    letter-spacing: normal;
-  }
-}*/
 * {
   margin: 0px;
   font-family: "roboto", cursive;
@@ -92,6 +11,133 @@
 * a {
   text-decoration: none;
   color: black;
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-animation: loader 5s ease-in-out;
+          animation: loader 5s ease-in-out;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.loader .sectionloader {
+  position: relative;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader .sectionloader .iconresto {
+  width: 100px;
+}
+
+.loader .sectionloader .iconresto path {
+  fill: transparent;
+  stroke: fuchsia;
+  stroke-width: 0.2px;
+}
+
+.loader .sectionloader .iconresto path {
+  stroke-dasharray: 55;
+  stroke-dashoffset: 0;
+  -webkit-animation: animate-resto 2s linear;
+          animation: animate-resto 2s linear;
+}
+
+.loader .sectionloader p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  -webkit-animation: animation-p 2s linear;
+          animation: animation-p 2s linear;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+    display: none;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+    display: none;
+  }
+}
+
+@-webkit-keyframes animate-resto {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 55;
+  }
+  100% {
+    stroke-dashoffset: 110;
+  }
+}
+
+@keyframes animate-resto {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 55;
+  }
+  100% {
+    stroke-dashoffset: 110;
+  }
+}
+
+@-webkit-keyframes animation-p {
+  0% {
+    letter-spacing: normal;
+  }
+  50% {
+    letter-spacing: 4px;
+  }
+  100% {
+    letter-spacing: normal;
+  }
+}
+
+@keyframes animation-p {
+  0% {
+    letter-spacing: normal;
+  }
+  50% {
+    letter-spacing: 4px;
+  }
+  100% {
+    letter-spacing: normal;
+  }
 }
 
 .logo h1 {
@@ -119,7 +165,7 @@
           justify-content: center;
   color: black;
   background-color: #e0dede;
-  width: 110vw;
+  width: 100%;
   -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.418) inset;
           box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.418) inset;
 }
