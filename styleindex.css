@@ -24,10 +24,6 @@
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  -webkit-animation: loader 5s ease-in-out;
-          animation: loader 5s ease-in-out;
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
 }
 
 .loader .sectionloader {
@@ -59,6 +55,8 @@
   stroke-dashoffset: 0;
   -webkit-animation: animate-resto 2s linear;
           animation: animate-resto 2s linear;
+  -webkit-animation-iteration-count: 4;
+          animation-iteration-count: 4;
 }
 
 .loader .sectionloader p {
@@ -66,30 +64,8 @@
   font-size: 14px;
   -webkit-animation: animation-p 2s linear;
           animation: animation-p 2s linear;
-}
-
-@-webkit-keyframes loader {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    z-index: -10;
-    display: none;
-  }
-}
-
-@keyframes loader {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    z-index: -10;
-    display: none;
-  }
+  -webkit-animation-iteration-count: 4;
+          animation-iteration-count: 4;
 }
 
 @-webkit-keyframes animate-resto {
