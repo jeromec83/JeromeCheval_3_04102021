@@ -24,10 +24,12 @@
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  visibility: hidden;
+  position: absolute;
+  z-index: 20;
 }
 
 .loader .sectionloader {
-  position: relative;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,6 +50,7 @@
   fill: transparent;
   stroke: fuchsia;
   stroke-width: 0.2px;
+  visibility: hidden;
 }
 
 .loader .sectionloader .iconresto path {
@@ -57,6 +60,7 @@
           animation: animate-resto 2s linear;
   -webkit-animation-iteration-count: 4;
           animation-iteration-count: 4;
+  visibility: hidden;
 }
 
 .loader .sectionloader p {
@@ -66,54 +70,69 @@
           animation: animation-p 2s linear;
   -webkit-animation-iteration-count: 4;
           animation-iteration-count: 4;
+  visibility: hidden;
 }
 
 @-webkit-keyframes animate-resto {
   0% {
     stroke-dashoffset: 0;
+    visibility: visible;
   }
   40% {
     stroke-dashoffset: 55;
   }
   100% {
     stroke-dashoffset: 110;
+    visibility: hidden;
   }
 }
 
 @keyframes animate-resto {
   0% {
     stroke-dashoffset: 0;
+    visibility: visible;
   }
   40% {
     stroke-dashoffset: 55;
   }
   100% {
     stroke-dashoffset: 110;
+    visibility: hidden;
   }
 }
 
 @-webkit-keyframes animation-p {
   0% {
     letter-spacing: normal;
+    visibility: visible;
   }
   50% {
     letter-spacing: 4px;
   }
   100% {
     letter-spacing: normal;
+    visibility: hidden;
   }
 }
 
 @keyframes animation-p {
   0% {
     letter-spacing: normal;
+    visibility: visible;
   }
   50% {
     letter-spacing: 4px;
   }
   100% {
     letter-spacing: normal;
+    visibility: hidden;
   }
+}
+
+.withoutloader {
+  position: relative;
+  top: 0px;
+  z-index: 2;
 }
 
 .logo h1 {
