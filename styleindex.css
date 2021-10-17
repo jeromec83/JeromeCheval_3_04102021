@@ -1,18 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
-* {
-  margin: 0px;
-  font-family: "roboto", cursive;
-}
-
-* li {
-  list-style-type: none;
-}
-
-* a {
-  text-decoration: none;
-  color: black;
-}
-
 .loader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,13 +10,14 @@
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  visibility: hidden;
   position: absolute;
-  z-index: 20;
+  margin: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
 }
 
 .loader .sectionloader {
-  width: 90%;
+  position: relative;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +37,6 @@
   fill: transparent;
   stroke: fuchsia;
   stroke-width: 0.2px;
-  visibility: hidden;
 }
 
 .loader .sectionloader .iconresto path {
@@ -60,7 +46,6 @@
           animation: animate-resto 2s linear;
   -webkit-animation-iteration-count: 4;
           animation-iteration-count: 4;
-  visibility: hidden;
 }
 
 .loader .sectionloader p {
@@ -70,69 +55,99 @@
           animation: animation-p 2s linear;
   -webkit-animation-iteration-count: 4;
           animation-iteration-count: 4;
-  visibility: hidden;
 }
 
 @-webkit-keyframes animate-resto {
   0% {
     stroke-dashoffset: 0;
-    visibility: visible;
   }
   40% {
     stroke-dashoffset: 55;
   }
   100% {
     stroke-dashoffset: 110;
-    visibility: hidden;
   }
 }
 
 @keyframes animate-resto {
   0% {
     stroke-dashoffset: 0;
-    visibility: visible;
   }
   40% {
     stroke-dashoffset: 55;
   }
   100% {
     stroke-dashoffset: 110;
-    visibility: hidden;
   }
 }
 
 @-webkit-keyframes animation-p {
   0% {
     letter-spacing: normal;
-    visibility: visible;
   }
   50% {
     letter-spacing: 4px;
   }
   100% {
     letter-spacing: normal;
-    visibility: hidden;
   }
 }
 
 @keyframes animation-p {
   0% {
     letter-spacing: normal;
-    visibility: visible;
   }
   50% {
     letter-spacing: 4px;
   }
   100% {
     letter-spacing: normal;
-    visibility: hidden;
   }
 }
 
-.withoutloader {
+* {
+  margin: 0px;
+  font-family: "roboto", cursive;
+}
+
+* li {
+  list-style-type: none;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+@-webkit-keyframes animmain {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animmain {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.afterloader {
+  z-index: 20;
   position: relative;
-  top: 0px;
-  z-index: 2;
+  -webkit-animation: animmain 10s;
+          animation: animmain 10s;
 }
 
 .logo h1 {
@@ -238,9 +253,6 @@
 }
 
 .fonction {
-  padding: 25px 10px;
-  width: 95%;
-  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,6 +260,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 25px 10px;
+  width: 95%;
+  background: white;
 }
 
 .fonction .fonctioncase {
@@ -258,9 +273,10 @@
       -ms-flex-align: center;
           align-items: center;
   background: #f6f6f6;
-  height: 50px;
-  width: 95%;
+  height: auto;
+  width: auto;
   margin: 10px 20px;
+  padding: 10px 10px;
   border-radius: 20px;
   position: relative;
 }
