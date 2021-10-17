@@ -80,8 +80,8 @@ img {
     position: relative; 
     &:hover {
       stroke:transparent;
-      transition: 0.5s;
       fill:url(#text-fill);
+      transition: 5s;
     }
   }
 
@@ -114,34 +114,34 @@ img {
     @include casemenu;
   }
   #case1{
-    animation: animcase 0.1s ease-in-out;
-  }
-  #case2{
     animation: animcase 0.5s ease-in-out;
   }
-  #case3{
+  #case2{
     animation: animcase 1s ease-in-out;
   }
-  #case4{
+  #case3{
     animation: animcase 1.5s ease-in-out;
   }
-  #case5{
+  #case4{
     animation: animcase 2s ease-in-out;
   }
-  #case6{
+  #case5{
     animation: animcase 2.5s ease-in-out;
   }
-  #case7{
+  #case6{
     animation: animcase 3s ease-in-out;
   }
-  #case8{
+  #case7{
     animation: animcase 3.5s ease-in-out;
   }
-  #case9{
+  #case8{
     animation: animcase 4s ease-in-out;
   }
-  #case10{
+  #case9{
     animation: animcase 4.5s ease-in-out;
+  }
+  #case10{
+    animation: animcase 5s ease-in-out;
   }
 
   .description {
@@ -194,7 +194,7 @@ img {
        justify-content: center;
        visibility:visible;
        height: 100%;
-       width: 100%;
+       max-width: 100%;
        position: absolue;
        background-color: $tertiaire;
        border: none;
@@ -216,7 +216,8 @@ img {
 }
 @keyframes animcase{
   0%{opacity: 0;};
-  100%{opacity:1};
+  60%{opacity:0;}
+  100%{opacity:1;};
 }
 
 .order {

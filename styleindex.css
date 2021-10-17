@@ -48,7 +48,7 @@
           animation-iteration-count: 4;
 }
 
-.loader .sectionloader p {
+.loader .sectionloader h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   -webkit-animation: animation-p 2s linear;
@@ -340,9 +340,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: strech;
-      -ms-flex-align: strech;
-          align-items: strech;
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.301);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.301);
@@ -406,9 +403,9 @@
 
 .resto .heartempty:hover {
   stroke: transparent;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   fill: url(#text-fill);
+  -webkit-animation: 5s ease-in-out;
+          animation: 5s ease-in-out;
 }
 
 .resto:hover {

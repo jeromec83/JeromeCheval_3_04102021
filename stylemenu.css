@@ -97,9 +97,9 @@ img {
 
 .restaurant .heartempty:hover {
   stroke: transparent;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   fill: url(#text-fill);
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 .restaurant .menu {
@@ -147,53 +147,53 @@ img {
 }
 
 .restaurant #case1 {
-  -webkit-animation: animcase 0.1s ease-in-out;
-          animation: animcase 0.1s ease-in-out;
-}
-
-.restaurant #case2 {
   -webkit-animation: animcase 0.5s ease-in-out;
           animation: animcase 0.5s ease-in-out;
 }
 
-.restaurant #case3 {
+.restaurant #case2 {
   -webkit-animation: animcase 1s ease-in-out;
           animation: animcase 1s ease-in-out;
 }
 
-.restaurant #case4 {
+.restaurant #case3 {
   -webkit-animation: animcase 1.5s ease-in-out;
           animation: animcase 1.5s ease-in-out;
 }
 
-.restaurant #case5 {
+.restaurant #case4 {
   -webkit-animation: animcase 2s ease-in-out;
           animation: animcase 2s ease-in-out;
 }
 
-.restaurant #case6 {
+.restaurant #case5 {
   -webkit-animation: animcase 2.5s ease-in-out;
           animation: animcase 2.5s ease-in-out;
 }
 
-.restaurant #case7 {
+.restaurant #case6 {
   -webkit-animation: animcase 3s ease-in-out;
           animation: animcase 3s ease-in-out;
 }
 
-.restaurant #case8 {
+.restaurant #case7 {
   -webkit-animation: animcase 3.5s ease-in-out;
           animation: animcase 3.5s ease-in-out;
 }
 
-.restaurant #case9 {
+.restaurant #case8 {
   -webkit-animation: animcase 4s ease-in-out;
           animation: animcase 4s ease-in-out;
 }
 
-.restaurant #case10 {
+.restaurant #case9 {
   -webkit-animation: animcase 4.5s ease-in-out;
           animation: animcase 4.5s ease-in-out;
+}
+
+.restaurant #case10 {
+  -webkit-animation: animcase 5s ease-in-out;
+          animation: animcase 5s ease-in-out;
 }
 
 .restaurant .description {
@@ -270,7 +270,7 @@ img {
           justify-content: center;
   visibility: visible;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   position: absolue;
   background-color: #99e2d0;
   border: none;
@@ -315,6 +315,9 @@ img {
   0% {
     opacity: 0;
   }
+  60% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
@@ -322,6 +325,9 @@ img {
 
 @keyframes animcase {
   0% {
+    opacity: 0;
+  }
+  60% {
     opacity: 0;
   }
   100% {
