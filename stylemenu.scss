@@ -81,10 +81,26 @@ img {
     &:hover {
       stroke:transparent;
       fill:url(#text-fill);
-      transition: 5s;
+      animation: animheart 2s ease-in-out;
     }
   }
-
+  @keyframes animheart {
+    0% {
+      stroke :black;
+      opacity: 0;
+    
+    }
+    50% {
+      stroke: transparent;
+        fill: url(#text-fill);
+      opacity: 0.5;
+    }
+    100% {
+      stroke: transparent;
+        fill: url(#text-fill);
+      opacity: 1;
+    }
+  }
   .menu {
     margin-left: 20px;
   }
@@ -107,7 +123,7 @@ img {
     height: 4px;
     background: #99e2d0;
     position: absolute;
-    left: 20px;
+   
     margin-top: 5px;
   }
   .casemenu {
@@ -283,5 +299,30 @@ footer{
 
   & a:hover{
     text-decoration: underline;
+  }
+}
+@media screen and (min-width: 600px){
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+  
+  
+  .footerlogo{
+    display:flex;
+    justify-content: space-around;
+  }
+
+  footer .footermenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    justify-items: center;
   }
 }

@@ -98,8 +98,42 @@ img {
 .restaurant .heartempty:hover {
   stroke: transparent;
   fill: url(#text-fill);
-  -webkit-transition: 5s;
-  transition: 5s;
+  -webkit-animation: animheart 2s ease-in-out;
+          animation: animheart 2s ease-in-out;
+}
+
+@-webkit-keyframes animheart {
+  0% {
+    stroke: black;
+    opacity: 0;
+  }
+  50% {
+    stroke: transparent;
+    fill: url(#text-fill);
+    opacity: 0.5;
+  }
+  100% {
+    stroke: transparent;
+    fill: url(#text-fill);
+    opacity: 1;
+  }
+}
+
+@keyframes animheart {
+  0% {
+    stroke: black;
+    opacity: 0;
+  }
+  50% {
+    stroke: transparent;
+    fill: url(#text-fill);
+    opacity: 0.5;
+  }
+  100% {
+    stroke: transparent;
+    fill: url(#text-fill);
+    opacity: 1;
+  }
 }
 
 .restaurant .menu {
@@ -133,7 +167,6 @@ img {
   height: 4px;
   background: #99e2d0;
   position: absolute;
-  left: 20px;
   margin-top: 5px;
 }
 
@@ -440,5 +473,41 @@ footer p:hover {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+  .footerlogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .footermenu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    justify-items: center;
+  }
 }
 /*# sourceMappingURL=stylemenu.css.map */

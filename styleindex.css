@@ -9,15 +9,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   min-height: 100vh;
   position: absolute;
-  margin: 0 20px 0 20px;
-  padding: 0 20px 0 20px;
 }
 
 .loader .sectionloader {
   position: relative;
-  width: 100%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,10 +401,44 @@
 }
 
 .resto .heartempty:hover {
+  -webkit-animation: animheart 2s ease-in-out;
+          animation: animheart 2s ease-in-out;
   stroke: transparent;
   fill: url(#text-fill);
-  -webkit-animation: 5s ease-in-out;
-          animation: 5s ease-in-out;
+}
+
+@-webkit-keyframes animheart {
+  0% {
+    stroke: black;
+    opacity: 0;
+  }
+  50% {
+    stroke: transparent;
+    fill: url(#text-fill);
+    opacity: 0.5;
+  }
+  100% {
+    stroke: transparent;
+    fill: url(#text-fill);
+    opacity: 1;
+  }
+}
+
+@keyframes animheart {
+  0% {
+    stroke: black;
+    opacity: 0;
+  }
+  50% {
+    stroke: transparent;
+    fill: url(#text-fill);
+    opacity: 0.5;
+  }
+  100% {
+    stroke: transparent;
+    fill: url(#text-fill);
+    opacity: 1;
+  }
 }
 
 .resto:hover {
@@ -474,5 +507,49 @@ footer p:hover {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+  .fonction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .fonction .fonctioncase {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .restoblock {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 90%;
+    margin-left: 50px;
+  }
+  .footerlogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .footermenu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    justify-items: center;
+    padding-bottom: 5px;
+  }
 }
 /*# sourceMappingURL=styleindex.css.map */
