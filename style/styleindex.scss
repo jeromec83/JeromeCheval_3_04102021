@@ -118,7 +118,7 @@ $tertiaire: #99e2d0;
   color: black;
   background-color: rgb(224, 222, 222);
   width: 100%;
-  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.418) inset;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.295) inset;
 }
 
 #recherche {
@@ -149,8 +149,9 @@ $tertiaire: #99e2d0;
   p {
     text-align: center;
     font-size: 20px;
-    font-weight: lighter;
+    font-weight: 400;
     margin: 16px 0px;
+    padding: 0 60px;
     color: darkgrey;
   }
   button {
@@ -168,6 +169,7 @@ $tertiaire: #99e2d0;
     opacity: 0.8;
     cursor: pointer;
     transition: ease-in-out 0.3s;
+    
   }
 }
 .fonction {
@@ -185,21 +187,15 @@ $tertiaire: #99e2d0;
     height: auto;
     width: auto;
     margin: 10px 20px;
-    padding: 10px 10px;
+    padding: 30px 10px;
     border-radius: 20px;
     position: relative;
-  }
-
-  .fonctioncase:hover {
-    opacity: 0.8;
-    cursor: pointer;
-    transition: ease-in-out 0.3s;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.349);
-    background: white;
+    font-weight: 500;
+    font-size: 18px;
   }
 
   .number {
-    background-color: #9356dc;
+    background-color: $primaire;
     color: white;
     position: absolute;
     padding: 3px 8px 3px 8px;
@@ -208,12 +204,24 @@ $tertiaire: #99e2d0;
   }
 
   .icon {
-    margin: 0 20px;
+    margin: 0 20px 0 40px;
+    color :darkgray;
+    font-size: 30px;
   }
-
-  .fas {
-    color: #7e7e7e;
+  
+  .fonctioncase:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.349);
+    background: #9456df2c;
+    & .icon .fas {
+      color: $primaire;
+      transition: ease-in-out 0.3s;
+    }
   }
+  
+  
 }
 .restaurant {
   background: #f6f6f6;
@@ -302,7 +310,7 @@ $tertiaire: #99e2d0;
 .resto:hover {
   cursor: pointer;
   transform: scale(1.02);
-  box-shadow: 1px -1px 17px 3px rgba(147, 86, 220, 0.73);
+  box-shadow: 0px 0px 17px 0px rgba(147, 86, 220, 0.73);
   transition: ease-in-out 0.5s;
 }
 

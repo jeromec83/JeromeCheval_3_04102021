@@ -241,22 +241,27 @@ img {
   100%{transform: rotate(360deg);}
 }
 
-.order {
-  height: 50px;
-  display: block;
-  opacity: 1;
-  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  color: white;
-  font-size: 16px;
-  padding: 0 20px;
-  border-radius: 200px;
-  border: none;
-    button:hover {
+
+    
+  button.order{
+    height: 50px;
+    display: block;
+    opacity: 1;
+    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 0 20px;
+    border-radius: 200px;
+    border: none;
+  }
+  button:hover {
     opacity: 0.8;
     cursor: pointer;
     transition: ease-in-out 0.3s;
-     }
-}
+    
+  }
+
 
 
 footer{
