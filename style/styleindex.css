@@ -228,7 +228,7 @@
   font-size: 20px;
   font-weight: 400;
   margin: 16px 0px;
-  padding: 0 60px;
+  padding: 0 20px;
   color: darkgrey;
 }
 
@@ -516,7 +516,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1080px) {
   .fonction {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -533,6 +533,9 @@ footer a:hover {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
+}
+
+@media screen and (min-width: 768px) {
   .restoblock {
     display: -ms-grid;
     display: grid;
@@ -541,6 +544,7 @@ footer a:hover {
     grid-gap: 20px;
     width: 90%;
     margin-left: 50px;
+    padding: 0px;
   }
   .footerlogo {
     display: -webkit-box;

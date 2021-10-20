@@ -151,7 +151,7 @@ $tertiaire: #99e2d0;
     font-size: 20px;
     font-weight: 400;
     margin: 16px 0px;
-    padding: 0 60px;
+    padding: 0 20px;
     color: darkgrey;
   }
   button {
@@ -358,7 +358,7 @@ footer {
     text-decoration: underline;
   }
 }
-@media screen and (min-width: 950px){
+@media screen and (min-width: 1080px){
   .fonction{
     display:flex;
     flex-direction: row;
@@ -366,16 +366,20 @@ footer {
 
     .fonctioncase{
       display: inline-flex;
+      
     }
 
   }
- 
+}
+
+@media screen and (min-width: 768px){
   .restoblock{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     width: 90%;
     margin-left :50px;
+    padding: 0px;
   }
 
   .footerlogo{
