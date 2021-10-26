@@ -43,8 +43,8 @@
   stroke-dashoffset: 0;
   -webkit-animation: animate-resto 2s linear;
           animation: animate-resto 2s linear;
-  -webkit-animation-iteration-count: 4;
-          animation-iteration-count: 4;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }
 
 .loader .sectionloader h2 {
@@ -52,8 +52,8 @@
   font-size: 14px;
   -webkit-animation: animation-p 2s linear;
           animation: animation-p 2s linear;
-  -webkit-animation-iteration-count: 4;
-          animation-iteration-count: 4;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }
 
 @-webkit-keyframes animate-resto {

@@ -1,193 +1,249 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ohmyfood</title>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./style/styleindex.css">
+    <link rel="stylesheet" type="text/css" href="./style/styleindex.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-   
-</head>
-<body>
-    <Section class="loader">
-        <div class="sectionloader">
-             <div class="iconresto">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-                    <path d="M3.5,0l-1,5.5c-0.1464,0.805,1.7815,1.181,1.75,2L4,14c-0.0384,0.9993,1,1,1,1s1.0384-0.0007,1-1L5.75,7.5&#xA;&#x9;c-0.0314-0.8176,1.7334-1.1808,1.75-2L6.5,0H6l0.25,4L5.5,4.5L5.25,0h-0.5L4.5,4.5L3.75,4L4,0H3.5z M12,0&#xA;&#x9;c-0.7364,0-1.9642,0.6549-2.4551,1.6367C9.1358,2.3731,9,4.0182,9,5v2.5c0,0.8182,1.0909,1,1.5,1L10,14c-0.0905,0.9959,1,1,1,1&#xA;&#x9;s1,0,1-1V0z"/>
-                  </svg>
-             </div>
-             <h2>Chargement...</h2>
-             <div class="iconresto">
-                <svg version="1.1" id="restaurant-15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-                    <path id="path11774" d="M3.5,0l-1,5.5c-0.1464,0.805,1.7815,1.181,1.75,2L4,14c-0.0384,0.9993,1,1,1,1s1.0384-0.0007,1-1L5.75,7.5&#xA;&#x9;c-0.0314-0.8176,1.7334-1.1808,1.75-2L6.5,0H6l0.25,4L5.5,4.5L5.25,0h-0.5L4.5,4.5L3.75,4L4,0H3.5z M12,0&#xA;&#x9;c-0.7364,0-1.9642,0.6549-2.4551,1.6367C9.1358,2.3731,9,4.0182,9,5v2.5c0,0.8182,1.0909,1,1.5,1L10,14c-0.0905,0.9959,1,1,1,1&#xA;&#x9;s1,0,1-1V0z"/>
-                  </svg>
-             </div>
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--loading spinner-->
+    <section class="loader">
+      <div class="sectionloader">
+        <div class="iconresto">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 15 15"
+          >
+            <path
+              d="M3.5,0l-1,5.5c-0.1464,0.805,1.7815,1.181,1.75,2L4,14c-0.0384,0.9993,1,1,1,1s1.0384-0.0007,1-1L5.75,7.5&#xA;&#x9;c-0.0314-0.8176,1.7334-1.1808,1.75-2L6.5,0H6l0.25,4L5.5,4.5L5.25,0h-0.5L4.5,4.5L3.75,4L4,0H3.5z M12,0&#xA;&#x9;c-0.7364,0-1.9642,0.6549-2.4551,1.6367C9.1358,2.3731,9,4.0182,9,5v2.5c0,0.8182,1.0909,1,1.5,1L10,14c-0.0905,0.9959,1,1,1,1&#xA;&#x9;s1,0,1-1V0z"
+            />
+          </svg>
+        </div>
+        <h2>Chargement...</h2>
+        <div class="iconresto">
+          <svg
+            version="1.1"
+            id="restaurant-15"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 15 15"
+          >
+            <path
+              id="path11774"
+              d="M3.5,0l-1,5.5c-0.1464,0.805,1.7815,1.181,1.75,2L4,14c-0.0384,0.9993,1,1,1,1s1.0384-0.0007,1-1L5.75,7.5&#xA;&#x9;c-0.0314-0.8176,1.7334-1.1808,1.75-2L6.5,0H6l0.25,4L5.5,4.5L5.25,0h-0.5L4.5,4.5L3.75,4L4,0H3.5z M12,0&#xA;&#x9;c-0.7364,0-1.9642,0.6549-2.4551,1.6367C9.1358,2.3731,9,4.0182,9,5v2.5c0,0.8182,1.0909,1,1.5,1L10,14c-0.0905,0.9959,1,1,1,1&#xA;&#x9;s1,0,1-1V0z"
+            />
+          </svg>
+        </div>
+      </div>
     </section>
     <div class="afterloader">
-        <header>
-            <div class="logo">
-                <h1>ohmyfood</h1>
+      <!--header-->
+      <header>
+        <div class="logo">
+          <h1>ohmyfood</h1>
+        </div>
+        <div class="location">
+          <div id="iconmaps">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <input type="text" value="Paris,Belleville" id="recherche" />
+          <a href="#"></a>
+        </div>
+      </header>
+      <!--Main-->
+      <main class="main">
+        <section class="intro">
+          <h2>Réservez le menu qui vous convient</h2>
+          <p>
+            Découvrez des restaurants d'exception, séléctionnés par nos soins.
+          </p>
+          <button id="explorer">Explorer nos restaurants</button>
+        </section>
+        <section class="fonction">
+          <div class="fonctioncontain">
+            <h2>Fonctionnement</h2>
+            <div class="fonctioncase">
+              <p class="number">1</p>
+              <div class="icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <p>Choisissez un restaurant</p>
             </div>
-            <div class="location">
-                <div id="iconmaps">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <input type="text" value="Paris,Belleville" id="recherche"/>
-                <a href="#"></a>
+            <div class="fonctioncase">
+              <p class="number">2</p>
+              <div class="icon">
+                <i class="fas fa-list-ul"></i>
+              </div>
+              <p>Composez votre menu</p>
             </div>
-        </header>   
-        <main class="main">
-            <section class="intro">
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <button id="explorer">Explorer nos restaurants</button>
-            </section>
-            <section class="fonction">
-                <div class="fonctioncontain">
-                    <h2>Fonctionnement</h2>
-                    <div class="fonctioncase">
-                        <p class="number">1</p>
-                        <div class="icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <p>Choisissez un restaurant</p>
-                    </div>
-                    <div class="fonctioncase">
-                        <p class="number">2</p>
-                        <div class="icon">
-                            <i class="fas fa-list-ul"></i>
-                        </div>
-                        <p>Composez votre menu</p>
-                    </div>
-                    <div class="fonctioncase">
-                        <p class="number">3</p>
-                        <div class="icon">
-                            <i class="fas fa-store"></i>
-                        </div>
-                        <p>Dégustez au restaurant</p>
-                    </div>
-                </div>
-            </section>
-            <section class="restaurant">
-                <h2>Restaurants</h2>
-                <div class="restoblock">
-                    <div class="resto">
-                        <a href="./resto/la-palette-du-gout.html">
-                            <p class="new">Nouveau</p>
-                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant la palette du goût">
-                            <div class="restotextheart">   
-                                <div class="textrestaurant">
-                                    <h3>La palette du goût</h3>
-                                    <p>Ménilmontant</p>
-                                </div>
-                                <div class="hearth">
-                                <svg class="heart heartempty" viewBox="-20 0 550 550"  xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+            <div class="fonctioncase">
+              <p class="number">3</p>
+              <div class="icon">
+                <i class="fas fa-store"></i>
+              </div>
+              <p>Dégustez au restaurant</p>
+            </div>
+          </div>
+        </section>
+        <section class="restaurant">
+          <h2>Restaurants</h2>
+          <div class="restoblock">
+            <div class="resto">
+              <a href="./resto/la-palette-du-gout.html">
+                <p class="new">Nouveau</p>
+                <img
+                  src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                  alt="Restaurant la palette du goût"
+                />
+                <div class="restotextheart">
+                  <div class="textrestaurant">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                  </div>
+                  <div class="hearth">
+                    <svg
+                      class="heart heartempty"
+                      viewBox="-20 0 550 550"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
                                             c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
                                             c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
                                             s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                            C512,93.417,453.532,30,376,30z"/>
-                                    <defs>
-                                    <linearGradient id="text-fill">
-                                            <stop offset="0%" stop-color="#9356DC" />
-                                            <stop offset="100%" stop-color="#FF79DA" />
-                                    </linearGradient>
-                                    </defs>                                   
-                                </svg>
-                                </div>     
-                            </div> 
-                        </a>
-                    </div>
-                    <div class="resto">
-                        <a href="./resto/la-note-enchantee.html">
-                            <p class="new">Nouveau</p>
-                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant la note enchantée">
-                            <div class="restotextheart">
-                                <div class="textrestaurant">
-                                    <h3>La note enchantée</h3>
-                                    <p>Charonne</p>
-                                </div>
-                                <div class="hearth">
-                                <svg class="heart heartempty" viewBox="-20 0 550 550"  xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                            C512,93.417,453.532,30,376,30z"
+                      />
+                      <defs>
+                        <linearGradient id="text-fill">
+                          <stop offset="0%" stop-color="#9356DC" />
+                          <stop offset="100%" stop-color="#FF79DA" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="resto">
+              <a href="./resto/la-note-enchantee.html">
+                <p class="new">Nouveau</p>
+                <img
+                  src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                  alt="Restaurant la note enchantée"
+                />
+                <div class="restotextheart">
+                  <div class="textrestaurant">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                  </div>
+                  <div class="hearth">
+                    <svg
+                      class="heart heartempty"
+                      viewBox="-20 0 550 550"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
                                             c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
                                             c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
                                             s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                            C512,93.417,453.532,30,376,30z"/>
-                                                                 
-                                </svg>
-                                </div>     
-                            </div> 
-                        </a>
-                    </div>
-                    <div class="resto">
-                        <a href="./resto/a-la-francaise.html">
-                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant A la francaise">
-                            <div class="restotextheart">    
-                                <div class="textrestaurant">
-                                    <h3>À la francaise</h3>
-                                    <p>Cité Rouge</p>
-                                </div>
-                                <div class="hearth">
-                                    <svg class="heart heartempty" viewBox="-20 0 550 550"  xml:space="preserve">
-                                        <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                            C512,93.417,453.532,30,376,30z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="resto">
+              <a href="./resto/a-la-francaise.html">
+                <img
+                  src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                  alt="Restaurant A la francaise"
+                />
+                <div class="restotextheart">
+                  <div class="textrestaurant">
+                    <h3>À la francaise</h3>
+                    <p>Cité Rouge</p>
+                  </div>
+                  <div class="hearth">
+                    <svg
+                      class="heart heartempty"
+                      viewBox="-20 0 550 550"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
                                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
                                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
                                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                                C512,93.417,453.532,30,376,30z"/>
-                                   
-                                    </svg>
-                                </div>     
-                            </div>
-                        </a>
-                    </div>
-                    <div class="resto">
-                        <a href="./resto/le-delice-des-sens.html">
-                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant Le délice des sens">
-                            <div class="restotextheart">
-                                <div class="textrestaurant">
-                                    <h3>Le délice des sens</h3>
-                                    <p>Folie-Mericourt</p>
-                                </div>
-                                <div class="hearth">
-                                    <svg class="heart heartempty" viewBox="-20 0 550 550"  xml:space="preserve">
-                                        <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                                C512,93.417,453.532,30,376,30z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="resto">
+              <a href="./resto/le-delice-des-sens.html">
+                <img
+                  src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                  alt="Restaurant Le délice des sens"
+                />
+                <div class="restotextheart">
+                  <div class="textrestaurant">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Mericourt</p>
+                  </div>
+                  <div class="hearth">
+                    <svg
+                      class="heart heartempty"
+                      viewBox="-20 0 550 550"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
                                                 c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
                                                 c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
                                                 s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                                C512,93.417,453.532,30,376,30z"/>
-                                                                 
-                                    </svg>
-                                </div>     
-                            </div>
-                        </a>
-                    </div>
+                                                C512,93.417,453.532,30,376,30z"
+                      />
+                    </svg>
+                  </div>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footerlogo">
-                <h3>ohmyfood</h3>
+              </a>
             </div>
-            <div class="footermenu">
-                <div class="footerblock">
-                    <i class="fas fa-utensils"></i>
-                    <p>Proposer un restaurant</p>
-                </div>
-                <div class="footerblock">
-                    <i class="fas fa-hands-helping"></i>
-                    <p>Devenir partenaire</p>
-                </div>
-                <div class="footerblock">
-                    <p>Mentions légales</p>
-                </div>
-                <div class="footerblock">
-                    <a href="mailto:contact@ohmyfood.com">Contact</a> 
-                </div>
-            </div>
-        </footer>
+          </div>
+        </section>
+      </main>
+      <!--Footer-->
+      <footer>
+        <div class="footerlogo">
+          <h3>ohmyfood</h3>
+        </div>
+        <div class="footermenu">
+          <div class="footerblock">
+            <i class="fas fa-utensils"></i>
+            <p>Proposer un restaurant</p>
+          </div>
+          <div class="footerblock">
+            <i class="fas fa-hands-helping"></i>
+            <p>Devenir partenaire</p>
+          </div>
+          <div class="footerblock">
+            <p>Mentions légales</p>
+          </div>
+          <div class="footerblock">
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
+</html>
